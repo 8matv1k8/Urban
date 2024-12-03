@@ -9,8 +9,8 @@ def is_num_multiple(first, second, num):
 
 for num in range(3, 21):
     result = []
-    for i in range(1, 20):
-        for j in range(1, 20):
+    for i in range(1, num+1):
+        for j in range(i+1, num+1):
             if is_num_multiple(i, j, num) and [j, i] not in result and i != j:
                 result.append([i, j])
 
