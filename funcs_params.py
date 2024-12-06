@@ -6,3 +6,4 @@ values_list = [1, 'no', False]
 values_list_2 = ['no', False]
 values_dict = {'a': False, 'b': 'cesium', 'c': 0}
 print_params(*values_list_2, 42)
+print_params(**values_dict)
